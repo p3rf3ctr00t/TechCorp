@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp - Employee Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to TechCorp Employee Portal</h1>
+
+    <!-- Employee Information Form -->
+    <section>
+        <h2>Employee Information</h2>
+        <form action="fetch-info.php" method="post">
+            <label for="employeeId">Enter Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+            <input type="submit" value="Get Info">
+        </form>
+    </section>
+
+    <!-- Feedback Submission Form -->
+    <section>
+        <h2>Submit Feedback</h2>
+        <form action="submit-feedback.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+</body>
+</html>
